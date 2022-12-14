@@ -1,0 +1,16 @@
+<!-- Liste de cours avec information et un bouton pour exécuter une action -->
+<ul>
+    {{#each cours}}
+        <li>
+            <h2>{{this.nom}}</h2>
+            <p>{{this.description}}</p>
+            <div class="info">
+                <div>Début: <span>{{date this.date_debut}}</span></div>
+                <div>Nombre de cours: <span>{{this.nb_cours}}</span></div>
+                <div>Heure: <span>{{time this.date_debut}}</span></div>
+                <div>Capacité: <span class="inscription">{{this.inscriptions}}</span><span> / {{this.capacite}}</span></div>
+            </div>
+            <button data-id-cours="{{this.id_cours}}" {{#if this.estInscrit}}disabled{{/if}}>{{../bouton}}</button>
+        </li>
+    {{/each}}
+</ul>

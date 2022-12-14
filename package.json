@@ -1,0 +1,32 @@
+{
+  "name": "inscription-cours",
+  "version": "1.0.0",
+  "description": "Une plateforme en ligne d'inscription de cours.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Wilkie",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.0",
+    "memorystore": "^1.6.7",
+    "package.json": "^2.0.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

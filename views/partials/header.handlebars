@@ -1,0 +1,22 @@
+<!-- Header du site web avec le menu de navigation -->
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <h1>Centre sportif de Wellston</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Cours</a></li>
+                <li><a href="/compte">Compte</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/register">Register</a></li>
+                {{#if user}}
+                    <li><a href="/deconnexion">Deconnexion</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </div>  
+</header>

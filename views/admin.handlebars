@@ -1,0 +1,45 @@
+<img src="/img/swimming-pool.jpg" alt="Gymnase du Centre sportif de Wellston">
+
+<div class="wrapper">
+    <!-- Liste de cours dans la base de données -->
+    <div class="liste-cours">
+        {{>cours}}
+    </div>
+
+    <!-- Formulaire pour ajouter un cours -->
+    <form id="form-ajouter" novalidate>
+        <h2>Nouveau cours</h2>
+        <label>
+            Nom: 
+            <input type="text" id="input-nom" required>
+        </label>
+        <div id="erreur-nom" class="erreur hidden"></div>
+        <label>
+            Description: 
+            <textarea id="input-description" required></textarea>
+        </label>
+        <div id="erreur-description" class="erreur hidden"></div>
+        <label>
+            Date de début: 
+            <input type="date" id="input-date" required>
+        </label>
+        <div id="erreur-date" class="erreur hidden"></div>
+        <label>
+            Heure: 
+            <input type="time" id="input-heure" required>
+        </label>
+        <div id="erreur-heure" class="erreur hidden"></div>
+        <label>
+            Nombre de cours: 
+            <input type="number" id="input-nombre" required min="1">
+        </label>
+        <div id="erreur-nombre" class="erreur hidden"></div>
+        <label>
+            Capacité: 
+            <input type="number" id="input-capacite" required min="1">
+        </label>
+        <div id="erreur-capacite" class="erreur hidden"></div>
+
+        <input type="submit" value="Ajouter">
+    </form>
+</div>
